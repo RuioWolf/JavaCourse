@@ -3,7 +3,7 @@ public class BallQuestion
 	public static void main(String[] args)
 	{
 		double h = 100, s = 0;
-		for ( int i = 1; i <= 2; ++i )
+		for ( int i = 1; i <= 10; ++i )
 		{
 			if ( i==1 )
 			{

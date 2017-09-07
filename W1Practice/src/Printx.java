@@ -5,7 +5,7 @@ public class Printx
 	public static void main(String[] args)
 	{
 		String kg, xh;
-		int k = 0, h = 10;
+		int k = 0, h = 5;
 		for ( int i = 1; i <= h; ++i )
 		{
 			kg = "";
