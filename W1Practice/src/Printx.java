@@ -1,4 +1,4 @@
-import java.io.*;
+//输出一个用*组成的金字塔
 
 public class Printx
 {

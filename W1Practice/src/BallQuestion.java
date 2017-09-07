@@ -1,3 +1,5 @@
+//一个球从100米的地方掉下来，每次反弹的高度是上一次的一般，问10次以后球总共经过多少米，第10次时候反弹的高度是多少
+
 public class BallQuestion
 {
 	public static void main(String[] args)
