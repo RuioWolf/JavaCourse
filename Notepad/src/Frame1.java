@@ -27,7 +27,7 @@ public class Frame1 extends JFrame
     {
         buttonCut.setToolTipText("剪切所选字符到剪贴板");
         buttonCopy.setToolTipText("复制所选字符到剪贴板");
-        buttonPaste.setToolTipText("粘贴剪贴班的内容");
+        buttonPaste.setToolTipText("粘贴剪贴板的内容");
         toolBar.add(buttonCut);
         toolBar.add(buttonCopy);
         toolBar.add(buttonPaste);
