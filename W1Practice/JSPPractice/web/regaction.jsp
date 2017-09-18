@@ -11,6 +11,9 @@
 	<title>Title</title>
 </head>
 <body>
+<%
+	request.setCharacterEncoding("utf-8");
+%>
 姓名：<%=request.getParameter("name")%><br>
 性别：
 <%

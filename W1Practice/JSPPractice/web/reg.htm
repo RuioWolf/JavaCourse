@@ -3,41 +3,48 @@
 <head>
 <meta charset="utf-8">
 <title>reg.htm</title>
+<style>
+	.div1
+	{
+		width: 600px;
+		margin: auto;
+	}
+</style>
 </head>
 
 <body>
 <center>
 <h1>欢迎新生进入注册</h1>
 	</center>
-	<div>
+	<div class="div1">
 	  <form action="regaction.jsp" method="post">
-		<p>姓名：<input type="text" name="name"></p><br>
-		性别：
+		<p>姓名：<input type="text" name="name"></p>
+		<p>性别：
 		<input type="radio" name="sex" value="male">男
-		<input type="radio" name="sex" value="female">女<br>
-		<p>出生年月：<input type="text" name="year">年<input type="text" name="month">月<input type="text" name="day">日</p><br>
-		<p>籍贯：<input type="text" name="province">省<input type="text" name="city">市<input type="text" name="area">区</p><br>
-		<p>目前专业：<input type="text" name="major"></p><br>
+		<input type="radio" name="sex" value="female">女</p>
+		<p>出生年月：<input type="text" name="year" size="10">年<input type="text" name="month" size="10">月<input type="text" name="day" size="10">日</p>
+		<p>籍贯：<input type="text" name="province" size="10">省<input type="text" name="city" size="10">市<input type="text" name="area" size="10">区</p>
+		<p>目前专业：<input type="text" name="major"></p>
 		<p>学习年限：
 		<select name="studyyears">
 			<option value="1">1</option>
 			<option value="2" selected>2</option>
 			<option value="3">3</option>
 			<option value="4">4</option>
-		</select></p><br>
-		<p>生源地：<input type="text" name="where"></p><br>
+		</select></p>
+		<p>生源地：<input type="text" name="where"></p>
 		<p>政治面貌:
 		<select name="who">
 			<option value="qunzhong" selected>群众</option>
 			<option value="dangyuan">党员</option>
 			<option value="tuanyuan">共青团团员</option>
-		</select></p><br>
+		</select></p>
 		<p>爱好：
 		<input type="checkbox" name="music">音乐
 		<input type="checkbox" name="sports">运动
 		<input type="checkbox" name="reading">读书
 		<input type="checkbox" name="game">游戏
-		</p><br>
+		</p>
 		<button type="submit">提交</button>
 		<button type="reset">重置</button>
 		</form>
