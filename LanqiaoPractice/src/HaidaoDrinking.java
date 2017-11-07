@@ -11,18 +11,19 @@ public class HaidaoDrinking
 {
 	public static void main(String[] args)
 	{
-		for ( double hdcount = 1; hdcount <= 20; hdcount++ )
+		for ( int hdcount = 1; hdcount <= 20; hdcount++ )
 		{
-			for ( double r1l = 1; r1l < hdcount; r1l++ )
+			for ( int r1l = 1; r1l < hdcount; r1l++ )
 			{
-				for ( double r2l = 1; r2l < r1l; r2l++ )
+				for ( int r2l = 1; r2l < r1l; r2l++ )
 				{
-					for ( double r3l = 1; r3l < r2l; r3l++ )
+					for ( int r3l = 1; r3l < r2l; r3l++ )
 					{
-						double s = (1 / hdcount) + (1 / r1l) + (1 / r2l) + (1 / r3l);
-						if ( s == 1 )
+//						double s = (1 / hdcount) + (1 / r1l) + (1 / r2l) + (1 / r3l);
+						if ( hdcount*r1l*r2l+r1l*r2l*r3l+hdcount*r2l*r3l+hdcount*r1l*r3l == hdcount*r1l*r2l*r3l )
 						{
-							System.out.println((int)hdcount + ", " + (int)r1l + ", " + (int)r2l + ", " + (int)r3l + ", 0");
+//							System.out.println((int)hdcount + ", " + (int)r1l + ", " + (int)r2l + ", " + (int)r3l + ", 0");
+							System.out.println(hdcount + ", " + r1l + ", " + r2l + ", " + r3l + ", 0");
 						}
 					}
 				}
