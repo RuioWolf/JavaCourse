@@ -1,0 +1,5 @@
+更新记录：
+1、页面编码全部修改为utf-8，在使用request的页面加上request.setCharacterEncoding("utf-8")。
+2、取消编码转换（暂时修改Convert.java内部方法）。
+3、修改js文件内乱码。
+4、补全部分超链接及文件。
