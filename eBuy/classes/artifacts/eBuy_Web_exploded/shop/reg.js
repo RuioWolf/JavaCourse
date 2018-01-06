@@ -1,72 +1,72 @@
 function check_name(form)
+{
+	if(form.c_name.value=="")
 	{
-		if(form.c_name.value=="")
-		{
-			alert("ÇëÌîĞ´ÄúµÄÓÃ»§Ãû!");
-			form.c_name.focus();
-			return false;
-		}
-		if(form.c_name.value.length<6 || form.c_name.value.length>20)
-		{
-			alert("ÓÃ»§ÃûµÄ³¤¶È±ØĞëÔÚ6-20Ö®¼ä£¡");
-			form.c_name.focus();
-			return false;
-		}
+		alert("è¯·å¡«å†™æ‚¨çš„ç”¨æˆ·å!");
+		form.c_name.focus();
+		return false;
 	}
-	function check_info(form)
+	if(form.c_name.value.length<6 || form.c_name.value.length>20)
 	{
-		if(form.c_pass.value=="")
-		{
-			alert("ÇëÌîĞ´ÄúµÄÃÜÂë!");
-			form.c_pass.focus();
-			return false;
-		}
-		if(form.c_pass2.value=="")
-		{
-			alert("ÇëÈ·ÈÏÄúµÄÃÜÂë");
-			form.c_pass2.focus();
-			return false;
-		}
-		if(form.c_pass2.value != form.c_pass.value)
-		{
-			alert("Á½´ÎÃÜÂë²»Ò»ÖÂ£¬ÇëÖØĞÂÌîĞ´");
-			form.c_pass2.focus();
-			return false;
-		}
-		if(form.c_phone.value=="")
-		{
-			alert("ÇëÊäÈëÄúµÄÁªÏµµç»°");
-			form.c_phone.focus();
-			return false;
-		}
-		if(form.c_phone.value.length>15)
-		{
-			alert("´íÎóµÄµç»°ºÅÂë£¬ÇëÖØĞÂÌîĞ´ÄúµÄµç»°£¡");
-			form.c_phone.focus();
-			return false;
-		}
-		if(isNaN(form.c_phone.value) || form.c_phone.value.indexOf('.',0)!=-1)
-		{
-			alert("Çë²»ÒªÊäÈë·Ç·¨×Ö·û");
-			form.c_phone.focus();
-			return false;
-		}	
-		if(form.c_question.value=="")
-		{
-			alert("ÇëÑ¡ÔñÄúµÄÎÊÌâÌáÊ¾");
-			form.c_question.focus();
-			return false;
-		}
-		if(form.c_answer.value=="")
-		{
-			alert("ÇëÌîĞ´ÌáÊ¾´ğ°¸");
-			form.c_answer.focus();
-			return false;
-		}
-		if(form.c_email.value.indexOf("@")==-1 ||(form.c_email.value.indexOf(".")==-1))
-		{
-			alert("´íÎóµÄEmail¸ñÊ½£¬ÇëÌîĞ´ÕıÈ·µÄµç×ÓÓÊÏä");
-			form.c_email.focus();
-			return false;
-		}
+		alert("ç”¨æˆ·åçš„é•¿åº¦å¿…é¡»åœ¨6-20ä¹‹é—´ï¼");
+		form.c_name.focus();
+		return false;
 	}
+}
+function check_info(form)
+{
+	if(form.c_pass.value=="")
+	{
+		alert("è¯·å¡«å†™æ‚¨çš„å¯†ç !");
+		form.c_pass.focus();
+		return false;
+	}
+	if(form.c_pass2.value=="")
+	{
+		alert("è¯·ç¡®è®¤æ‚¨çš„å¯†ç ");
+		form.c_pass2.focus();
+		return false;
+	}
+	if(form.c_pass2.value != form.c_pass.value)
+	{
+		alert("ä¸¤æ¬¡å¯†ç ä¸ä¸€è‡´ï¼Œè¯·é‡æ–°å¡«å†™");
+		form.c_pass2.focus();
+		return false;
+	}
+	if(form.c_phone.value=="")
+	{
+		alert("è¯·è¾“å…¥æ‚¨çš„è”ç³»ç”µè¯");
+		form.c_phone.focus();
+		return false;
+	}
+	if(form.c_phone.value.length>15)
+	{
+		alert("é”™è¯¯çš„ç”µè¯å·ç ï¼Œè¯·é‡æ–°å¡«å†™æ‚¨çš„ç”µè¯ï¼");
+		form.c_phone.focus();
+		return false;
+	}
+	if(isNaN(form.c_phone.value) || form.c_phone.value.indexOf('.',0)!=-1)
+	{
+		alert("è¯·ä¸è¦è¾“å…¥éæ³•å­—ç¬¦");
+		form.c_phone.focus();
+		return false;
+	}
+	if(form.c_question.value=="")
+	{
+		alert("è¯·é€‰æ‹©æ‚¨çš„é—®é¢˜æç¤º");
+		form.c_question.focus();
+		return false;
+	}
+	if(form.c_answer.value=="")
+	{
+		alert("è¯·å¡«å†™æç¤ºç­”æ¡ˆ");
+		form.c_answer.focus();
+		return false;
+	}
+	if(form.c_email.value.indexOf("@")==-1 ||(form.c_email.value.indexOf(".")==-1))
+	{
+		alert("é”™è¯¯çš„Emailæ ¼å¼ï¼Œè¯·å¡«å†™æ­£ç¡®çš„ç”µå­é‚®ç®±");
+		form.c_email.focus();
+		return false;
+	}
+}

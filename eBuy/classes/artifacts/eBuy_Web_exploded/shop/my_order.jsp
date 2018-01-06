@@ -79,6 +79,7 @@ a:active {
     <td width="126" align="center" bgcolor="#FFFFFF" class="STYLE2">操作</td>
     </tr>
      <%
+	     request.setCharacterEncoding("utf-8");
 	String str=(String)request.getParameter("page");
 	if(str==null)
 	{

@@ -25,7 +25,8 @@
  -->
 </script>
 
-<% 
+<%
+	request.setCharacterEncoding("utf-8");
 	String c_name=(String) session.getAttribute("c_name");
 	String c_header=(String) session.getAttribute("c_header");
 	String t_type=(String) request.getParameter("t_type");

@@ -3,7 +3,8 @@
 <%@ page import="java.sql.*" %>
 <html>
 <head><title>eBuy电子商务</title>
-<% 
+<%
+	request.setCharacterEncoding("utf-8");
 	String p_id=(String) request.getParameter("p_id");
 	String p_type="",p_name="",p_quantity="",p_image="",p_description="";
 	float p_price=0;

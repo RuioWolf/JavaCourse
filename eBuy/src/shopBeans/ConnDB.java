@@ -9,16 +9,18 @@ public class ConnDB
 	public Statement stmt=null;
 	public ResultSet rs=null;
 	
-	//ODBC°æÇı¶¯¼°Á¬½ÓĞ­Òé
+	//ODBCç‰ˆé©±åŠ¨åŠè¿æ¥åè®®
 	//private static String dbDriver="sun.jdbc.odbc.JdbcOdbcDriver";
 	//private static String dbUrl="jdbc:odbc:shopData";
-	//JDBC°æÇı¶¯¼°Á¬½ÓĞ­Òé£¬ĞèÒª°ÑJDBCÇı¶¯°ü·ÅÈë¶ÔÓ¦WebContent/Web-INF/libÄ¿Â¼
+	//JDBCç‰ˆé©±åŠ¨åŠè¿æ¥åè®®ï¼Œéœ€è¦æŠŠJDBCé©±åŠ¨åŒ…æ”¾å…¥å¯¹åº”WebContent/Web-INF/libç›®å½•
 	private static String dbDriver="com.microsoft.sqlserver.jdbc.SQLServerDriver";
-	private static String dbUrl="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=ShopSystem";
+	private static String dbUrl="jdbc:sqlserver://192.168.1.10:1433;DatabaseName=ShopSystem";
+//	private static String dbUrl="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=ShopSystem";
 	private static String dbUser="sa";
-	private static String dbPwd="123456";
+	private static String dbPwd="qwer";
+//	private static String dbPwd="123456";
 
-	//´ò¿ªÊı¾İ¿âÁ¬½Ó
+	//æ‰“å¼€æ•°æ®åº“è¿æ¥
 	public static Connection getConnection()
 	{
 		Connection conn=null;
@@ -33,11 +35,11 @@ public class ConnDB
 		}
     	if (conn == null) 
     	{
-      		System.err.println("¾¯¸æ:Êı¾İ¿âÁ¬½ÓÊ§°Ü!");
+      		System.err.println("è­¦å‘Š:æ•°æ®åº“è¿æ¥å¤±è´¥!");
     	}		
 		return conn;
 	}
-	//¶ÁÈ¡½á¹û¼¯
+	//è¯»å–ç»“æœé›†
 	public ResultSet doQuery(String sql)
 	{
 		try
@@ -52,7 +54,7 @@ public class ConnDB
 		}
 		return rs;
 	}
-	//¸üĞÂÊı¾İ
+	//æ›´æ–°æ•°æ®
 	public int doUpdate(String sql)
 	{
 		int result=0;
@@ -68,7 +70,7 @@ public class ConnDB
 		}
 		return result;
 	}
-	//¹Ø±ÕÊı¾İ¿âÁ¬½Ó
+	//å…³é—­æ•°æ®åº“è¿æ¥
 	public void closeConnection()
 	{
 		try

@@ -21,6 +21,7 @@
 	String c_name = (String) session.getAttribute("c_name");
 	String c_header = (String) session.getAttribute("c_header");
 	if (c_name != null && c_name != "") {
+		request.setCharacterEncoding("utf-8");
 		String message = (String) request.getParameter("c_message");
 		double m = Math.random();
 		String id = String.valueOf(m).substring(2, 5);

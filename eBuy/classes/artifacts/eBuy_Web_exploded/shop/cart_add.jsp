@@ -9,6 +9,7 @@
 </head>
 <body>
 <%
+request.setCharacterEncoding("utf-8");
 	String p_id=request.getParameter("p_id");
 	Vector cart=(Vector)session.getAttribute("cart");
 	CartBean cb=new CartBean();

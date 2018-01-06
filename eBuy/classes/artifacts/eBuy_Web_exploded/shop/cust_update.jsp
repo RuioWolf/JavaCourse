@@ -108,69 +108,70 @@ a:active {
   </tr>
   <tr>
     <td height="30" align="right"><span class="STYLE1">头像选择</span>：&nbsp;</td>
-    <td height="30" align="left"><select name=reg_userPic size=1 onChange="document.images['avatar'].src=options[selectedIndex].value;">
-            <option value="..\images\face\Image1.gif">Image1
-            <option value="..\images\face\Image2.gif">Image2
-            <option value="..\images\face\Image3.gif">Image3
-			<option value="..\images\face\Image4.gif">Image4
-            <option value="..\images\face\Image5.gif">Image5
-            <option value="..\images\face\Image6.gif">Image6
-			<option value="..\images\face\Image7.gif">Image7
-            <option value="..\images\face\Image8.gif">Image8
-            <option value="..\images\face\Image9.gif">Image9
-			<option value="..\images\face\Image10.gif">Image10
-            <option value="..\images\face\Image11.gif">Image11
-            <option value="..\images\face\Image12.gif">Image12
-			<option value="..\images\face\Image13.gif">Image13
-            <option value="..\images\face\Image14.gif">Image14
-            <option value="..\images\face\Image15.gif">Image15
-			<option value="..\images\face\Image16.gif">Image16
-            <option value="..\images\face\Image17.gif">Image17
-            <option value="..\images\face\Image18.gif">Image18
-			<option value="..\images\face\Image19.gif">Image19 
-			<option value="..\images\face\Image20.gif">Image20
-			<option value="..\images\face\Image21.gif">Image21
-            <option value="..\images\face\Image22.gif">Image22
-            <option value="..\images\face\Image23.gif">Image23
-			<option value="..\images\face\Image24.gif">Image24
-            <option value="..\images\face\Image25.gif">Image25
-            <option value="..\images\face\Image26.gif">Image26
-			<option value="..\images\face\Image27.gif">Image27
-            <option value="..\images\face\Image28.gif">Image28
-            <option value="..\images\face\Image29.gif">Image29
-			<option value="..\images\face\Image30.gif">Image30
-            <option value="..\images\face\Image31.gif">Image31
-            <option value="..\images\face\Image32.gif">Image32
-			<option value="..\images\face\Image33.gif">Image33
-            <option value="..\images\face\Image34.gif">Image34
-            <option value="..\images\face\Image35.gif">Image35
-			<option value="..\images\face\Image36.gif">Image36
-            <option value="..\images\face\Image37.gif">Image37
-            <option value="..\images\face\Image38.gif">Image38
-			<option value="..\images\face\Image39.gif">Image39
-            <option value="..\images\face\Image40.gif">Image40
-			<option value="..\images\face\Image41.gif">Image41
-            <option value="..\images\face\Image42.gif">Image42
-            <option value="..\images\face\Image43.gif">Image43
-			<option value="..\images\face\Image44.gif">Image44
-            <option value="..\images\face\Image45.gif">Image45
-            <option value="..\images\face\Image46.gif">Image46
-			<option value="..\images\face\Image47.gif">Image47
-            <option value="..\images\face\Image48.gif">Image48
-            <option value="..\images\face\Image49.gif">Image49
-			<option value="..\images\face\Image50.gif">Image50
-            <option value="..\images\face\Image51.gif">Image51
-            <option value="..\images\face\Image52.gif">Image52
-			<option value="..\images\face\Image53.gif">Image53
-            <option value="..\images\face\Image54.gif">Image54
-            <option value="..\images\face\Image55.gif">Image55
-			<option value="..\images\face\Image56.gif">Image56
-            <option value="..\images\face\Image57.gif">Image57
-            <option value="..\images\face\Image58.gif">Image58
-			<option value="..\images\face\Image59.gif">Image59
-            <option value="..\images\face\Image60.gif">Image60
-         </select>
-		 &nbsp;&nbsp;<img id=avatar src="<%= rs.getString("c_header") %>" alt=个人形象代表 width="32" height="32"> <span class="STYLE3">*</span> </td>
+	  <td height="30" align="left"><span class="STYLE1">&nbsp;&nbsp;&nbsp;点击<a href="https://cn.gravatar.com/">这里</a>前往&nbsp;Gravatar.com&nbsp;设置自己的自定义头像&nbsp;更改邮箱或头像需要重新登陆生效</span></td>
+    <%--<td height="30" align="left"><select name=reg_userPic size=1 onChange="document.images['avatar'].src=options[selectedIndex].value;">--%>
+            <%--<option value="..\images\face\Image1.gif">Image1--%>
+            <%--<option value="..\images\face\Image2.gif">Image2--%>
+            <%--<option value="..\images\face\Image3.gif">Image3--%>
+			<%--<option value="..\images\face\Image4.gif">Image4--%>
+            <%--<option value="..\images\face\Image5.gif">Image5--%>
+            <%--<option value="..\images\face\Image6.gif">Image6--%>
+			<%--<option value="..\images\face\Image7.gif">Image7--%>
+            <%--<option value="..\images\face\Image8.gif">Image8--%>
+            <%--<option value="..\images\face\Image9.gif">Image9--%>
+			<%--<option value="..\images\face\Image10.gif">Image10--%>
+            <%--<option value="..\images\face\Image11.gif">Image11--%>
+            <%--<option value="..\images\face\Image12.gif">Image12--%>
+			<%--<option value="..\images\face\Image13.gif">Image13--%>
+            <%--<option value="..\images\face\Image14.gif">Image14--%>
+            <%--<option value="..\images\face\Image15.gif">Image15--%>
+			<%--<option value="..\images\face\Image16.gif">Image16--%>
+            <%--<option value="..\images\face\Image17.gif">Image17--%>
+            <%--<option value="..\images\face\Image18.gif">Image18--%>
+			<%--<option value="..\images\face\Image19.gif">Image19 --%>
+			<%--<option value="..\images\face\Image20.gif">Image20--%>
+			<%--<option value="..\images\face\Image21.gif">Image21--%>
+            <%--<option value="..\images\face\Image22.gif">Image22--%>
+            <%--<option value="..\images\face\Image23.gif">Image23--%>
+			<%--<option value="..\images\face\Image24.gif">Image24--%>
+            <%--<option value="..\images\face\Image25.gif">Image25--%>
+            <%--<option value="..\images\face\Image26.gif">Image26--%>
+			<%--<option value="..\images\face\Image27.gif">Image27--%>
+            <%--<option value="..\images\face\Image28.gif">Image28--%>
+            <%--<option value="..\images\face\Image29.gif">Image29--%>
+			<%--<option value="..\images\face\Image30.gif">Image30--%>
+            <%--<option value="..\images\face\Image31.gif">Image31--%>
+            <%--<option value="..\images\face\Image32.gif">Image32--%>
+			<%--<option value="..\images\face\Image33.gif">Image33--%>
+            <%--<option value="..\images\face\Image34.gif">Image34--%>
+            <%--<option value="..\images\face\Image35.gif">Image35--%>
+			<%--<option value="..\images\face\Image36.gif">Image36--%>
+            <%--<option value="..\images\face\Image37.gif">Image37--%>
+            <%--<option value="..\images\face\Image38.gif">Image38--%>
+			<%--<option value="..\images\face\Image39.gif">Image39--%>
+            <%--<option value="..\images\face\Image40.gif">Image40--%>
+			<%--<option value="..\images\face\Image41.gif">Image41--%>
+            <%--<option value="..\images\face\Image42.gif">Image42--%>
+            <%--<option value="..\images\face\Image43.gif">Image43--%>
+			<%--<option value="..\images\face\Image44.gif">Image44--%>
+            <%--<option value="..\images\face\Image45.gif">Image45--%>
+            <%--<option value="..\images\face\Image46.gif">Image46--%>
+			<%--<option value="..\images\face\Image47.gif">Image47--%>
+            <%--<option value="..\images\face\Image48.gif">Image48--%>
+            <%--<option value="..\images\face\Image49.gif">Image49--%>
+			<%--<option value="..\images\face\Image50.gif">Image50--%>
+            <%--<option value="..\images\face\Image51.gif">Image51--%>
+            <%--<option value="..\images\face\Image52.gif">Image52--%>
+			<%--<option value="..\images\face\Image53.gif">Image53--%>
+            <%--<option value="..\images\face\Image54.gif">Image54--%>
+            <%--<option value="..\images\face\Image55.gif">Image55--%>
+			<%--<option value="..\images\face\Image56.gif">Image56--%>
+            <%--<option value="..\images\face\Image57.gif">Image57--%>
+            <%--<option value="..\images\face\Image58.gif">Image58--%>
+			<%--<option value="..\images\face\Image59.gif">Image59--%>
+            <%--<option value="..\images\face\Image60.gif">Image60--%>
+         <%--</select>--%>
+		 <%--&nbsp;&nbsp;<img id=avatar src="<%= rs.getString("c_header") %>" alt=个人形象代表 width="32" height="32"> <span class="STYLE3">*</span> </td>--%>
   </tr>
   <tr>
     <td height="30" align="right"><span class="STYLE1">联系电话</span>：&nbsp;</td>

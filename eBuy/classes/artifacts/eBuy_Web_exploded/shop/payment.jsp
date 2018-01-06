@@ -5,7 +5,7 @@
 <%@ page import="shopBeans.ConnDB"%>
 <%@ page import="java.util.Date" %>
 <%
-
+	request.setCharacterEncoding("utf-8");
 	String c_name=(String)session.getAttribute("c_name");
 	String c_header=(String)session.getAttribute("c_header");
 	String order_number=(String)session.getAttribute("order_number");

@@ -3,7 +3,8 @@
 <%@ page import="java.sql.*" %>
 <html><head>
 <title>Easy Buy Online</title>
-<% 
+<%
+	request.setCharacterEncoding("utf-8");
 	String o_id=(String) request.getParameter("order_id");
 	if(o_id=="" || o_id==null)
 	{

@@ -19,7 +19,7 @@ a:active {
 <body>
 <jsp:include page="title.jsp" flush="true"/>
 <jsp:include page="menu.jsp" flush="true"/>
-<jsp:include page="explain.html" flush="true"/>
+<jsp:include page="explain.html" flush="true" />
 <jsp:include page="forget_pass1.jsp" flush="true"/>
 <jsp:include page="copyright.jsp" flush="true"/>
 </body>

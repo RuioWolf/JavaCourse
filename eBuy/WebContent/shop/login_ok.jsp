@@ -1,8 +1,10 @@
 <%@ page contentType="text/html;charset=utf-8" %>
 <%@ page import="shopBeans.ConnDB" %> 
 <%@ page import="java.sql.*" %>
+<%@ page import="shopBeans.AvatarSystem" %>
 
-<% 
+<%
+	request.setCharacterEncoding("utf-8");
 	String c_name=(String)request.getParameter("c_name");
 	String c_pass=(String)request.getParameter("c_pass");
 	String cname=(String) session.getAttribute("c_name");
@@ -13,13 +15,16 @@
 	{
 		try
 		{
-			String strSql="select c_name,c_pass,c_header from customer where c_name='"+c_name+"' and c_pass='"+c_pass+"'";
+			String strSql="select c_name,c_pass,c_email from customer where c_name='"+c_name+"' and c_pass='"+c_pass+"'";
+//			String strSql="select c_name,c_pass,c_header from customer where c_name='"+c_name+"' and c_pass='"+c_pass+"'";
 			ResultSet rsLogin=conn.doQuery(strSql);
 			while(rsLogin.next())
 			{
 				name=rsLogin.getString("c_name");
 				pass=rsLogin.getString("c_pass");
-				header=rsLogin.getString("c_header");
+				header=AvatarSystem.getAvatar(rsLogin.getString("c_email"));
+//				System.out.println(rsLogin.getString("c_email"));
+//				System.out.println(rsLogin.getString(header));
 			}
 		}
 		catch(Exception e)

@@ -20,7 +20,8 @@ a:active {
 <%@ page contentType="text/html;charset=utf-8" %>
 <%@ page import="shopBeans.ConnDB" %>
 <%@ page import="java.sql.*" %>
-<% 
+<%
+	request.setCharacterEncoding("utf-8");
 	String p_id=(String) request.getParameter("p_id");
 	String p_image="";
 	ConnDB conn=new ConnDB();

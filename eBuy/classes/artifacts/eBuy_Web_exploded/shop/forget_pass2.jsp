@@ -44,7 +44,8 @@ a:active {
 </script>
 </head>
 <body>
-<% 
+<%
+	request.setCharacterEncoding("utf-8");
 	String c_name=request.getParameter("c_name");
 	if(c_name=="" || c_name==null)
 	{

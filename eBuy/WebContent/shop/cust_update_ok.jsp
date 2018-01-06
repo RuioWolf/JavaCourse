@@ -3,7 +3,8 @@
 <%@ page import="shopBeans.Convert" %>
 <%@ page import="java.sql.*" %>
 
-<% 
+<%
+	request.setCharacterEncoding("utf-8");
 	String name=(String) request.getParameter("name");
 	String pass=(String) request.getParameter("c_pass");
 	String image=(String) request.getParameter("reg_userPic");
@@ -28,6 +29,10 @@
 	{
 		String sql="update customer set c_pass='"+pass+"',c_header='"+image+"',c_phone='"+phone+"',c_question='"+question+"',c_answer='"+answer+"',c_address='"+address+"',c_email='"+email+"' where c_name='"+name+"'";
 		int temp=conn.doUpdate(sql);
+		
+//		System.out.println(sql);
+//		System.out.println(temp);
+		
 		if(temp!=0)
 		{
 			out.println( "<HTML><HEAD><META http-equiv='refresh' content='2; URL=index.jsp' target=Main></HEAD><BODY bgcolor='#FFFFFF'></body></html>");

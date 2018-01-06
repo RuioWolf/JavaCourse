@@ -29,6 +29,7 @@ try
 			<td height="48" colspan="2" align="center" bgcolor="#eeeeee"><span class="STYLE3">eBuy电子商城 意见与建议 </span></td>
 	</tr>
    <%
+	   request.setCharacterEncoding("utf-8");
 	String str=(String)request.getParameter("page");
 	if(str==null)
 	{
