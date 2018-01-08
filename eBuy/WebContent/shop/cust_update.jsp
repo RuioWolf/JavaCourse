@@ -108,7 +108,7 @@ a:active {
   </tr>
   <tr>
     <td height="30" align="right"><span class="STYLE1">头像选择</span>：&nbsp;</td>
-	  <td height="30" align="left"><span class="STYLE1">&nbsp;&nbsp;&nbsp;点击<a href="https://cn.gravatar.com/">这里</a>前往&nbsp;Gravatar.com&nbsp;设置自己的自定义头像&nbsp;更改邮箱或头像需要重新登陆生效</span></td>
+	  <td height="30" align="left"><span class="STYLE1">&nbsp;&nbsp;&nbsp;点击<a href="https://secure.gravatar.com/">这里</a>前往&nbsp;Gravatar.com&nbsp;设置自己的自定义头像&nbsp;更改邮箱或头像需要重新登陆生效</span></td>
     <%--<td height="30" align="left"><select name=reg_userPic size=1 onChange="document.images['avatar'].src=options[selectedIndex].value;">--%>
             <%--<option value="..\images\face\Image1.gif">Image1--%>
             <%--<option value="..\images\face\Image2.gif">Image2--%>
