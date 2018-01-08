@@ -30,8 +30,8 @@
 		String sql="update customer set c_pass='"+pass+"',c_header='"+image+"',c_phone='"+phone+"',c_question='"+question+"',c_answer='"+answer+"',c_address='"+address+"',c_email='"+email+"' where c_name='"+name+"'";
 		int temp=conn.doUpdate(sql);
 		
-		System.out.println(sql);
-		System.out.println(temp);
+//		System.out.println(sql);
+//		System.out.println(temp);
 		
 		if(temp!=0)
 		{

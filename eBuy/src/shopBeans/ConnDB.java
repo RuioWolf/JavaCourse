@@ -14,7 +14,7 @@ public class ConnDB
 	//private static String dbUrl="jdbc:odbc:shopData";
 	//JDBC版驱动及连接协议，需要把JDBC驱动包放入对应WebContent/Web-INF/lib目录
 	private static String dbDriver="com.microsoft.sqlserver.jdbc.SQLServerDriver";
-	private static String dbUrl="jdbc:sqlserver://192.168.1.10:1433;DatabaseName=ShopSystem";
+	private static String dbUrl="jdbc:sqlserver://192.168.43.214:1433;DatabaseName=ShopSystem";
 //	private static String dbUrl="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=ShopSystem";
 	private static String dbUser="sa";
 	private static String dbPwd="qwer";

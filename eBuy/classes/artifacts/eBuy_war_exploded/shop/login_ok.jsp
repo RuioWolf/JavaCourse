@@ -23,8 +23,8 @@
 				name=rsLogin.getString("c_name");
 				pass=rsLogin.getString("c_pass");
 				header=AvatarSystem.getAvatar(rsLogin.getString("c_email"));
-				System.out.println(rsLogin.getString("c_email"));
-				System.out.println(rsLogin.getString(header));
+//				System.out.println(rsLogin.getString("c_email"));
+//				System.out.println(rsLogin.getString(header));
 			}
 		}
 		catch(Exception e)

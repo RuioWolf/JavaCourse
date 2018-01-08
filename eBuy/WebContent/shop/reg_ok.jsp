@@ -26,7 +26,8 @@ a:active {
 -->
 </style>
 <jsp:include page="title.jsp" flush="true"/>
-<% 
+<%
+		request.setCharacterEncoding("utf-8");
 	String name=(String) session.getAttribute("name");
 	session.removeAttribute("name");
 	String pass=(String) request.getParameter("c_pass");

@@ -55,14 +55,14 @@
 	{
 		
 		String answer = request.getParameter("c_answer");
-		System.out.println(answer);
+//		System.out.println(answer);
 		String c_answer = "";
 		String c_pass = "";
 		String c_header = "";
 		ConnDB con = new ConnDB();
 		String sql = "select c_pass,c_header,c_answer from customer where c_name='" + c_name + "'";
 		ResultSet rs = con.doQuery(sql);
-		System.out.println(sql);
+//		System.out.println(sql);
 		if ( rs.next() )
 		{
 			c_pass = rs.getString("c_pass");
@@ -72,7 +72,7 @@
 			{
 				out.println("<HTML><HEAD><META http-equiv='refresh' content='2; URL=forget_pass.jsp' target=Main></HEAD><BODY bgcolor='#FFFFFF'></body></html>");
 				//			System.out.println(answer);
-				System.out.println(c_answer);
+//				System.out.println(c_answer);
 %>
 <center>
 	<br/><br/><br/><br/><br/><br/><br/><br/>
