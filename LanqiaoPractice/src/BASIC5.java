@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class BASIC5 {
@@ -6,14 +5,15 @@ public class BASIC5 {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
         String in = sc.nextLine();
-        int f = Integer.parseInt(sc.nextLine());
+        String f = sc.nextLine();
+        /* n,in,f */
         String[] ins = in.split(" ");
-        int[] ini = new int[n];
         for(int i = 0; i < n; ++i) {
-            ini[i] = Integer.parseInt(ins[i]);
+            if(f.equals(ins[i])) {
+                System.out.println(i + 1);
+                break;
+            }
         }
-//        int pos = Arrays.binarySearch(ini, f);
-//        System.out.println(pos+1);
     }
 }
 

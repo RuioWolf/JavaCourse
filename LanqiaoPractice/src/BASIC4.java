@@ -8,7 +8,7 @@ public class BASIC4 {
         String[] ins = in.split(" ");
         int[] ini = new int[n];
         for(int i = 0; i < n; ++i) {
-            ini[i] =Integer.parseInt(ins[i]);
+            ini[i] = Integer.parseInt(ins[i]);
         }
         int max = ini[0], min = ini[0], sum = 0;
         for(int i = 0; i < ini.length; ++i) {
