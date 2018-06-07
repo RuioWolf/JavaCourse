@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/cn/xmg_wolfcode/mybatis/many2many/App.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/xmg_wolfcode/mybatis/many2many/Student.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/xmg_wolfcode/mybatis/many2many/Teacher.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/xmg_wolfcode/mybatis/many2one/App.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/xmg_wolfcode/mybatis/many2one/Department.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/xmg_wolfcode/mybatis/many2one/Employee.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/xmg_wolfcode/mybatis/util/MyBatisUtil.java" charset="GBK" />
+  </component>
+</project>

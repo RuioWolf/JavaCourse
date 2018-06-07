@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="mybatis-3.4.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/mybatis-3.4.1.jar!/"/>
+	</lib>
+	<lib name="mysql-connector-java-5.1.38.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.38.jar!/"/>
+	</lib>
+	<lib name="slf4j-api-1.7.21.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.21.jar!/"/>
+	</lib>
+	<lib name="slf4j-log4j12-1.7.21.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/slf4j-log4j12-1.7.21.jar!/"/>
+	</lib>
+	<lib name="log4j-1.2.17.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/log4j-1.2.17.jar!/"/>
+	</lib>
+	<levels>
+		<level name="lib" value="project"/>
+	</levels>
+</component>

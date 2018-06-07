@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.xmg_wolfcode.mybatis.many2one.EmployeeMapper">
+	<!-- 使用自定义匹配规则 -->
+	<resultMap type="cn.xmg_wolfcode.mybatis.many2one.Employee" id="baseMap">
+		<id property="id" column="id"/>
+		<result property="name" column="name"/>
+		
+		<!-- many2one封装 
+			property:哪个是关联的one方属性
+			javaType:one方对象是什么类型
+		-->
+		<association 
+			property="dept" 
+			javaType="cn.xmg_wolfcode.mybatis.many2one.Department">
+			
+			<id property="id" column="d_id"/>
+			<result property="name" column="d_name"/>
+		</association>
+	</resultMap>
+
+	<select id="get" resultMap="baseMap">
+		select 
+			e.id, e.name,
+			d.id d_id, d.name d_name 
+		from employee e 
+		join department d on e.dept_id = d.id
+		where e.id = #{id}
+	</select>
+
+	<insert id="save" useGeneratedKeys="true" keyProperty="id">
+		insert into employee(name, dept_id) values(#{name}, #{dept.id})
+	</insert>
+</mapper>
